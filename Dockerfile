@@ -1,3 +1,4 @@
+
 # 使用官方 PHP-Apache 镜像
 FROM php:7.0-apache
 
@@ -7,3 +8,5 @@ RUN docker-php-ext-install pdo_mysql
 
 # /var/www/html/ 为 Apache 目录
 COPY . /var/www/html/
+
+EXPOSE 80
